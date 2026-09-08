@@ -6,7 +6,7 @@ class Coffee:
         self.price = price
 
         if self.size not in ["Small", "Medium", "Large"]:
-            print("size must be Small, Medium, or Large")
+            raise ValueError("size must be Small, Medium, or Large")
 
     def tip(self):
         self.price += 1
